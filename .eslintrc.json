@@ -6,6 +6,7 @@
         "import"
     ],
     "extends": [
+        "typescript",
         "airbnb-typescript/base",
         "plugin:@typescript-eslint/recommended",
         "plugin:unicorn/recommended",
@@ -25,6 +26,12 @@
     "rules": {
         "no-debugger": "off",
         "no-console": 0,
-        "class-methods-use-this": "off"
+        "class-methods-use-this": "off",
+        "filenames/no-index": "error",
+        "filenames/match-exported": ["error", "kebab"],
+        "jest/no-disabled-tests": "error",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/valid-expect": "error"
     }
 }
