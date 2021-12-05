@@ -1,8 +1,17 @@
 {
-    "plugins": ["prettier", "import"],
+    "plugins": [    
+        "@typescript-eslint",
+        "prettier",
+        "unicorn" ,
+        "import"
+    ],
     "extends": [
+        "airbnb-typescript/base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:unicorn/recommended",
         "plugin:prettier/recommended",
-        "prettier"
+        "prettier",
+        "prettier/@typescript-eslint"
     ],
     "parserOptions": {
         "ecmaVersion": 2020,
